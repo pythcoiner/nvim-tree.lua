@@ -187,6 +187,7 @@ local function open_or_expand_or_dir_up(mode, toggle_group)
       lib.expand_or_collapse(node, toggle_group)
     elseif not toggle_group then
       edit(mode, node)
+      actions.tree.toggle.fn()
     end
   end
 end
